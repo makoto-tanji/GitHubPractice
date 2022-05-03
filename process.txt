@@ -100,3 +100,5 @@ mainブランチ  ---- origin/mainブランチ ---- mainブランチ
 
 git fetch：リモートの「main」ブランチをローカルの「origin/main」ブランチに
 git merge：ローカルの「origin/main」ブランチをローカルの「main」ブランチに
+3-1.
+cloneした
