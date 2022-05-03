@@ -50,3 +50,6 @@ Accept Current Change | Accept Incoming Change | Accept Both | Compare Change
 
 ってのがVSCode内で表示された
 両方残すならAccept Both
+
+3-1.
+cloneした
