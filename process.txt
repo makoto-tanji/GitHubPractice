@@ -3,3 +3,18 @@
 1-2.編集
 
 2-1.ブランチtestBranch作成
+git add -A
+git commit -m
+git push
+
+エラー
+fatal: The current branch testBranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin testBranch
+
+remoteのblanchと紐付いていないらしい
+pullもpushもできない
+
+なので
+git push -u origin testBranch
