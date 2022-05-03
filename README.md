@@ -5,14 +5,14 @@ GitHubのコマンドや流れを理解するための勉強内容
 # directory
 
 ./
- ├────test
- |     ├────.git
- |     ├────process.txt
- |     └────README.md
- |
- └────clone
-       ├────process.txt
-       └────README.md
+├────test<br>
+|<span>       </span>├────.git<br>
+|<span>       </span>├────process.txt<br>
+|<span>       </span>└────README.md<br>
+|<br>
+└────clone<br>
+<span>       </span>├────process.txt<br>
+<span>       </span>└────README.md<br>
 
 # Usage
 
@@ -82,56 +82,34 @@ git clone https://github.com/makoto-tanji/GitHubPractice.git ./
 
 ## branch
 
-main    testBranch
+main<span>       </span>testBranch
 
-1-1
-
- |
-
- |
-
-1-2
-
- |
-
- ├───────┐
-
-1-3     2-1
-
- |       |
-
- |       |
-
-1-4     2-2
-
- |       |
-
- ├───────┘
-
+1-1<br>
+|<br>
+|<br>
+1-2<br>
+|<br>
+├───────┐<br>
+1-3<span>       </span>2-1<br>
+|<span>       </span>|<br>
+|<span>       </span>|<br>
+1-4<span>       </span>2-2<br>
+|<span>       </span>|<br>
+├───────┘<br>
 1-5
 
 ## clone
 
-main    clone
+main<span>       </span>clone
 
-1-5
-
- |
-
- |
-
- ├───────┐
-
- |      3-1
-
- |       |
-
- |       |
-
- |      3-2
-
- |       |
-
- ├───────┘
-
-1-6
+1-5<br>
+|<br>
+|<br>
+├───────┐<br>
+|<span>       </span>3-1<br>
+|<span>       </span>|<br>
+|<span>       </span>|<br>
+|<span>       </span>3-2<br>
+|<span>       </span>|<br>
+├───────┘<br>
+1-6<br>
