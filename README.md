@@ -83,30 +83,55 @@ git clone https://github.com/makoto-tanji/GitHubPractice.git ./
 ## branch
 
 main    testBranch
+
 1-1
+
  |
+
  |
+
 1-2
+
  |
+
  ├───────┐
+
 1-3     2-1
+
  |       |
+
  |       |
+
 1-4     2-2
+
  |       |
+
  ├───────┘
+
 1-5
 
 ## clone
+
 main    clone
+
 1-5
+
  |
+
  |
+
  ├───────┐
+
  |      3-1
+
  |       |
+
  |       |
+
  |      3-2
+
  |       |
+
  ├───────┘
+
 1-6
