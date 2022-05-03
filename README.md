@@ -71,6 +71,17 @@ git branch
 ```bash
 git clone https://github.com/<ユーザー名>/<リポジトリ名>.git  <ディレクトリ>
 git clone https://github.com/makoto-tanji/GitHubPractice.git ./
+
+git add -A
+git commit -m "clone side"
+git push
+
+cd ../test
+git fetch origin main
+git merge origin/main
+git add -A
+git commit -m "fetch and merge"
+git push
 ```
 
 
