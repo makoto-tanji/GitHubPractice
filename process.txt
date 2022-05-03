@@ -10,3 +10,43 @@ git checkout main
 1-4.
 2-1とかの内容が消えたままの状態でcommit
 次マージしたらどうなるのか
+
+
+2-1.ブランチtestBranch作成
+git add -A
+git commit -m
+git push
+
+エラー
+fatal: The current branch testBranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin testBranch
+
+2-2.
+remoteのblanchと紐付いていないらしい
+pullもpushもできない
+
+なので
+git push -u origin testBranch
+
+2-3.
+mainに切り替えようとしたら
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+        process.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+なのでもう一度コミット
+
+1-5.
+Accept Current Change | Accept Incoming Change | Accept Both | Compare Change
+<<<<<<< HEAD (Current Change)
+// main の内容
+======
+// testBranchの内容
+>>>>>>> testBranch (Incoming Change)
+
+ってのがVSCode内で表示された
+両方残すならAccept Both
