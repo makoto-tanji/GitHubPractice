@@ -50,3 +50,53 @@ Accept Current Change | Accept Incoming Change | Accept Both | Compare Change
 
 ってのがVSCode内で表示された
 両方残すならAccept Both
+
+1-6.
+cloneした後に元のディレクトリ側で編集
+add
+comit
+push
+
+エラー
+
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/makoto-tanji/GitHubPractice.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+リモートにローカルにない作業が含まれているため、更新は拒否されました。 これは通常、別のリポジトリが同じ参照にプッシュすることによって発生します。 もう一度プッシュする前に、最初にリモートの変更（たとえば、「git pull ...」）を統合することをお勧めします。 詳細については、「gitpush--help」の「早送りに関する注意」を参照してください。
+
+1-7.
+git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   process.txt
+
+つまり
+cloneした方のpush(リモート main)がcloneされた方(ローカル=origin/main)に反映されていないことが原因
+
+git fetch origin main
+git merge origin/main
+
+or
+
+git pull origin main
+
+fetchとは
+モートリポジトリの最新情報をローカルリポジトリ(origin/main)へ持ってくる
+origin/mainブランチ ローカルにある、リモートのmianブランチを追跡するリモート追跡ブランチ。
+
+remote         |    local
+
+mainブランチ  ---- origin/mainブランチ ---- mainブランチ
+
+git fetch：リモートの「main」ブランチをローカルの「origin/main」ブランチに
+git merge：ローカルの「origin/main」ブランチをローカルの「main」ブランチに
