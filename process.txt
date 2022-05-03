@@ -6,3 +6,7 @@
 git checkout main
 して
 とりあえずcommit
+
+1-4.
+2-1とかの内容が消えたままの状態でcommit
+次マージしたらどうなるのか
